@@ -5,7 +5,6 @@ import plotly.express as px
 
 
 
-
 st.title("Hello, Streamlit!")
 st.write("This is my first Streamlit app.")
 st.sidebar.header('This is a sidebar')
@@ -78,7 +77,7 @@ if uploaded_file_1 is not None and uploaded_file_2 is not None:
         title=f"Monthly {metric_to_plot} Comparison"
     )
     st.plotly_chart(fig, use_container_width=True)
-
+    
     # --- 3. Data Preview ---
     with st.expander("Show Combined Data"):
         st.dataframe(df_combined)
